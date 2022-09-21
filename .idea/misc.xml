@@ -4,8 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_cloudy.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_drizzle.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_humidity.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_location.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_pressure.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_rainy.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_snow.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_sunny.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_sunrise.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_sunset.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_termometer.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_thunderstorm.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_tilda.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_wind_icon.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_windy.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/sad_face.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/font/fonts.xml" value="0.18055555555555555" />
       </map>
