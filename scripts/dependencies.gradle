@@ -27,7 +27,7 @@ ext {
             coroutinesAdapter          : '0.9.2',
             roomVersion                : '2.4.0',
             roomCommon                 : '2.4.3',
-            hiltVersion                : '2.42',
+            hiltVersion                : '2.40.5',
             hilt_lifecycle_viewmodel   : '1.0.0-alpha03',
             hilt_navigation_compose    : '1.0.0',
             timber                     : '5.0.1',
@@ -81,7 +81,7 @@ ext {
     ]
 
     hilt = [
-            hilt_gradle             :"com.google.dagger:hilt-android-gradle-plugin:${libVersion.hiltVersion}",
+            hilt_gradle             : "com.google.dagger:hilt-android-gradle-plugin:${libVersion.hiltVersion}",
             hilt_android            : "com.google.dagger:hilt-android:${libVersion.hiltVersion}",
             hilt_lifecycle_viewmodel: "androidx.hilt:hilt-lifecycle-viewmodel:${libVersion.hilt_lifecycle_viewmodel}",
             hilt_navigation_compose : "androidx.hilt:hilt-navigation-compose:${libVersion.hilt_navigation_compose}",

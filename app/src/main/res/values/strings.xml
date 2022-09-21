@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WeatherForecast</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="splash_screen_background">Compose weather Forecast</string>
 </resources>

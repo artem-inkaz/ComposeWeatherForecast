@@ -83,6 +83,8 @@ android {
 }
 
 dependencies {
+    implementation project(':common')
+    implementation project(':viewmodels')
 
     implementation androidX.ktx_core
 
@@ -96,9 +98,16 @@ dependencies {
     implementation design.appMaterialVersion
 
     implementation hilt.hilt_android
-    implementation hilt.hilt_lifecycle_viewmodel
+//    implementation hilt.hilt_lifecycle_viewmodel
     implementation hilt.hilt_navigation_compose
     kapt hilt.hilt_android_compiler
+
+    implementation accompanist.pager
+    implementation accompanist.navigation_animation
+    implementation accompanist.permissions
+    implementation accompanist.systemuicontroller
+    implementation accompanist.insets
+    implementation accompanist.insets_ui
 
     //Loging
     implementation timber.timber
