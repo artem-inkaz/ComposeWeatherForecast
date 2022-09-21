@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_drizzle.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/ic_pressure.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/drawable/sad_face.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/WeatherForecast/app/src/main/res/font/fonts.xml" value="0.18055555555555555" />
       </map>
     </option>
