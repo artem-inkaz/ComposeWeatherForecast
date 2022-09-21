@@ -9,8 +9,8 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- UI colors -->
-    <color name="firstGrayBlue">#FF9DE44D</color>
-    <color name="secondOrangeDawn">#FFFFEB3B</color>
+    <color name="firstGreenBlue">#FF9DE44D</color>
+    <color name="secondYellowDawn">#FFFFEB3B</color>
     <color name="secondaryLightCarrot">#FFFFA957</color>
     <color name="secondaryPearlWhite">#FFEDE6CB</color>
     <color name="secondaryLemonWhite">#FFFFF7DC</color>
