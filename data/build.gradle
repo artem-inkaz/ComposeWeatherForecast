@@ -1,0 +1,26 @@
+apply from: "$project.rootDir/scripts/common-library.gradle"
+apply plugin :'com.android.library'
+apply plugin :'org.jetbrains.kotlin.android'
+apply plugin :"kotlin-kapt"
+apply plugin :'dagger.hilt.android.plugin'
+
+dependencies {
+    implementation androidX.ktx_core
+    implementation lifecycle.lifecycle_runtime_ktx
+    implementation hilt.hilt_android
+    implementation hilt.hilt_navigation_compose
+    implementation project(path: ':app')
+    kapt hilt.hilt_android_compiler
+
+    implementation retrofit.retrofit
+    implementation retrofit.converter_gson
+    implementation retrofit.coroutines_adapter
+    implementation retrofit.logging_interceptor
+
+    testImplementation test.junit
+    androidTestImplementation test.ext_junit
+    androidTestImplementation test.espresso_core
+    androidTestImplementation test.ui_test_junit4
+    debugImplementation test.ui_tooling
+    debugImplementation test.ui_test_manifest
+}

@@ -49,6 +49,14 @@ android {
             zipAlignEnabled true
         }
     }
+
+    buildTypes.each {
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file("weather_key.properties").newDataInputStream())
+        def weather_key = properties.getProperty("weather_key", "")
+        it.buildConfigField "String", "weather_key", weather_key
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -98,7 +106,6 @@ dependencies {
     implementation design.appMaterialVersion
 
     implementation hilt.hilt_android
-//    implementation hilt.hilt_lifecycle_viewmodel
     implementation hilt.hilt_navigation_compose
     kapt hilt.hilt_android_compiler
 

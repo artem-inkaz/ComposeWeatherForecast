@@ -16,3 +16,5 @@ rootProject.name = "WeatherForecast"
 include ':app'
 include ':common'
 include ':viewmodels'
+include ':data'
+include ':domain'
