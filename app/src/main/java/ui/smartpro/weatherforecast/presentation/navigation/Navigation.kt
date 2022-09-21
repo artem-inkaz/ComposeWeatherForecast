@@ -10,6 +10,7 @@ import com.google.accompanist.navigation.animation.AnimatedNavHost
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import ui.smartpro.common.Constants.SPLASH_SCREEN
+import ui.smartpro.weatherforecast.presentation.navigation.destinations.homeComposable
 import ui.smartpro.weatherforecast.presentation.navigation.destinations.splashComposable
 
 @ExperimentalComposeUiApi
@@ -23,5 +24,9 @@ fun SetupNavigation(navHostController: NavHostController) {
 
     AnimatedNavHost(navController = navHostController, startDestination = SPLASH_SCREEN) {
         splashComposable(navigateToHomeScreen = screens.splash)
+        homeComposable(
+            navigateToPreferencesScreen = screens.preferences,
+            navigateToSearchScreen = screens.search
+        )
     }
 }

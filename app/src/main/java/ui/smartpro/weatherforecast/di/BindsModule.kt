@@ -12,6 +12,8 @@ import ui.smartpro.domain.repositories.datastore.DataStoreRepository
 import ui.smartpro.domain.repositories.datastore.DataStoreRepositoryImpl
 import ui.smartpro.domain.repositories.forecast.ForecastRepository
 import ui.smartpro.domain.repositories.forecast.ForecastRepositoryImpl
+import ui.smartpro.weatherforecast.interactors.WeatherIconsInteractorImpl
+import ui.smartpro.weatherforecast.interactors.WeatherStringsInteractorImpl
 
 @Module
 @InstallIn(ViewModelComponent::class)
@@ -25,4 +27,10 @@ interface BindsModule {
 
     @Binds
     fun bindDataStoreRepository(dataStoreRepositoryImpl: DataStoreRepositoryImpl): DataStoreRepository
+
+    @Binds
+    fun bindIconsInteractor(weatherIconsInteractorImpl: WeatherIconsInteractorImpl): WeatherIconsInteractor
+
+    @Binds
+    fun bindWeatherStringsInteractor(weatherStringsInteractorImpl: WeatherStringsInteractorImpl): WeatherStringsInteractor
 }

@@ -2,4 +2,11 @@
     <string name="app_name">WeatherForecast</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="splash_screen_background">Compose weather Forecast</string>
+    <string name="unknown">Неизвестно</string>
+    <string name="today">Сегодня</string>
+    <string name="ok">Ок</string>
+    <string name="cancel">Нет</string>
+    <string name="unavailable_feature">Функция недоступна</string>
+    <string name="location_rationale">Для работы приложения необходимы разрешения доступа к локации. Пожалуйста, дайте разрешение.</string>
+    <string name="open_settings">Открыть настройки</string>
 </resources>
