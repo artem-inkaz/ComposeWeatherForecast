@@ -5,17 +5,23 @@ apply plugin :"kotlin-kapt"
 apply plugin :'dagger.hilt.android.plugin'
 
 dependencies {
+    implementation project(':common')
+
     implementation androidX.ktx_core
     implementation lifecycle.lifecycle_runtime_ktx
     implementation hilt.hilt_android
     implementation hilt.hilt_navigation_compose
-    implementation project(path: ':app')
     kapt hilt.hilt_android_compiler
 
     implementation retrofit.retrofit
     implementation retrofit.converter_gson
     implementation retrofit.coroutines_adapter
     implementation retrofit.logging_interceptor
+
+    implementation room.room_runtime
+    implementation room.room_ktx
+    kapt room.room_compiler
+    implementation room.room_common
 
     testImplementation test.junit
     androidTestImplementation test.ext_junit

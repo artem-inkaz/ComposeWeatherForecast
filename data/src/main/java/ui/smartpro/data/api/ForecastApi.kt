@@ -2,9 +2,9 @@ package ui.smartpro.data.api
 
 import retrofit2.http.GET
 import retrofit2.http.Query
-import ui.smartpro.data.dto.day_forecast.DayForecastResponse
-import ui.smartpro.data.dto.week_forecast.ForecastResponse
-import ui.smartpro.weatherforecast.BuildConfig
+import ui.smartpro.common.Constants.WEATHER_API_ID
+import ui.smartpro.data.api.dto.day_forecast.DayForecastResponse
+import ui.smartpro.data.api.dto.week_forecast.ForecastResponse
 import javax.inject.Singleton
 
 @Singleton
@@ -16,7 +16,7 @@ interface ForecastApi {
         @Query("lon") lon: Double,
         @Query("units") units: String,
         @Query("lang") lang: String,
-        @Query("appid") appid: String = BuildConfig.weather_key
+        @Query("appid") appid: String = WEATHER_API_ID
     ) : ForecastResponse
 
     @GET(value = "/data/2.5/weather")
@@ -25,6 +25,6 @@ interface ForecastApi {
         @Query("lon") lon: Double,
         @Query("units") units: String,
         @Query("lang") lang: String,
-        @Query("appid") appid: String = BuildConfig.weather_key
+        @Query("appid") appid: String = WEATHER_API_ID
     ): DayForecastResponse
 }

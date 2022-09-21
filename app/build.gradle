@@ -93,9 +93,10 @@ android {
 dependencies {
     implementation project(':common')
     implementation project(':viewmodels')
+    implementation project(':data')
+    implementation project(':domain')
 
     implementation androidX.ktx_core
-
     implementation androidX.compose_ui
     implementation androidX.compose_material
     implementation androidX.compose_preview
@@ -118,6 +119,16 @@ dependencies {
 
     //Loging
     implementation timber.timber
+
+    //Preferences
+    implementation preferences.datastore_preferences
+
+    implementation room.room_runtime
+
+    implementation retrofit.retrofit
+    implementation retrofit.converter_gson
+    implementation retrofit.coroutines_adapter
+    implementation retrofit.logging_interceptor
 
     //Multidex
     implementation multidex.multidex

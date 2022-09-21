@@ -2,7 +2,7 @@ package ui.smartpro.data.api
 
 import retrofit2.http.GET
 import retrofit2.http.Query
-import ui.smartpro.data.dto.city_search.CitiesResponse
+import ui.smartpro.data.api.dto.city_search.CitiesResponse
 import javax.inject.Singleton
 
 @Singleton
