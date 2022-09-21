@@ -125,6 +125,8 @@ dependencies {
 
     implementation room.room_runtime
 
+    implementation location.services_location
+
     implementation retrofit.retrofit
     implementation retrofit.converter_gson
     implementation retrofit.coroutines_adapter

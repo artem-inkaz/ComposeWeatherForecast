@@ -33,7 +33,7 @@ ext {
             firebase                   : '29.2.1',
             firebase_crashlytics_gradle: '2.8.1',
             google_services            : '4.3.10',
-            play_services_location     : '19.0.0',
+            play_services_location     : '20.0.0',
             firebase_crashlytics_ktx   : '18.2.9',
             firebase_analytics_ktx     : '20.1.2',
             firebase_messaging         : '21.0.1',
@@ -93,6 +93,10 @@ ext {
             logging_interceptor: "com.squareup.okhttp3:logging-interceptor:${libVersion.logging_interceptor}"
     ]
 
+    location = [
+            services_location  : "com.google.android.gms:play-services-location:${libVersion.play_services_location}",
+    ]
+
     accompanist = [
             pager               : "com.google.accompanist:accompanist-pager:${libVersion.accompanist_version}",
             navigation_animation: "com.google.accompanist:accompanist-navigation-animation:${libVersion.accompanist_version}",
@@ -111,11 +115,11 @@ ext {
     ]
 
     test = [
-            junit           : "junit:junit:${libVersion.junit}",
-            ext_junit       : "androidx.test.ext:junit:${libVersion.ext_junit}",
-            espresso_core   : "androidx.test.espresso:espresso-core:${libVersion.espresso_core}",
-            ui_test_junit4  : "androidx.compose.ui:ui-test-junit4:${libVersion.ui_test_junit4}",
-            ui_tooling      : "androidx.compose.ui:ui-tooling:${libVersion.ui_tooling}",
-            ui_test_manifest: "androidx.compose.ui:ui-test-manifest:${libVersion.ui_test_manifest}"
+          junit           : "junit:junit:${libVersion.junit}",
+          ext_junit       : "androidx.test.ext:junit:${libVersion.ext_junit}",
+          espresso_core   : "androidx.test.espresso:espresso-core:${libVersion.espresso_core}",
+          ui_test_junit4  : "androidx.compose.ui:ui-test-junit4:${libVersion.ui_test_junit4}",
+          ui_tooling      : "androidx.compose.ui:ui-tooling:${libVersion.ui_tooling}",
+          ui_test_manifest: "androidx.compose.ui:ui-test-manifest:${libVersion.ui_test_manifest}"
     ]
 }

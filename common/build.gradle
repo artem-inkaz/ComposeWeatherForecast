@@ -11,4 +11,9 @@ dependencies {
     implementation hilt.hilt_android
     implementation hilt.hilt_navigation_compose
     kapt hilt.hilt_android_compiler
+
+    //Loging
+    implementation timber.timber
+
+    implementation location.services_location
 }
