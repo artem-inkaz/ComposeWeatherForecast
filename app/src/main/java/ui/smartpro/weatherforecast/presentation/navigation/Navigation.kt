@@ -11,6 +11,7 @@ import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import ui.smartpro.common.Constants.SPLASH_SCREEN
 import ui.smartpro.weatherforecast.presentation.navigation.destinations.homeComposable
+import ui.smartpro.weatherforecast.presentation.navigation.destinations.searchComposable
 import ui.smartpro.weatherforecast.presentation.navigation.destinations.splashComposable
 
 @ExperimentalComposeUiApi
@@ -28,5 +29,6 @@ fun SetupNavigation(navHostController: NavHostController) {
             navigateToPreferencesScreen = screens.preferences,
             navigateToSearchScreen = screens.search
         )
+        searchComposable()
     }
 }

@@ -1,5 +1,7 @@
 package ui.smartpro.common
 
+import androidx.compose.ui.unit.dp
+
 object Constants {
     const val SPLASH_SCREEN_FIRST_LAUNCH_DELAY = 2500L
 
@@ -17,6 +19,8 @@ object Constants {
     val snow_ids_range = 600..622
     val atmosphere_ids_range = 701..781
     val clouds_ids_range = 801..804
+
+    val TOP_APPBAR_HEIGHT = 56.dp
 
     const val WEATHER_API_URL = "https://api.openweathermap.org"
     const val CITY_API_URL = "http://geodb-free-service.wirefreethought.com/"

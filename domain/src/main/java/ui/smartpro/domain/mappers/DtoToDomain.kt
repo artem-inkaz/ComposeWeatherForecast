@@ -6,6 +6,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import timber.log.Timber
 import ui.smartpro.common.Constants
 import ui.smartpro.common.addTempPrefix
+import ui.smartpro.common.capitalize
 import ui.smartpro.data.api.dto.city_search.CitiesResponse
 import ui.smartpro.data.api.dto.day_forecast.DayForecastResponse
 import ui.smartpro.data.api.dto.week_forecast.Daily
@@ -41,11 +42,7 @@ class DtoToDomain @Inject constructor(
         currentWindSpeed = DOUBLE_NUMBERS_FORMAT.format(weekForecast.current.wind_speed),
         currentHumidity = "${DOUBLE_NUMBERS_FORMAT.format(weekForecast.current.humidity)}%",
         currentWeatherStatus = if (weekForecast.current.weather.isNotEmpty())
-            weekForecast.current.weather[0].description.replaceFirstChar {
-                if (it.isLowerCase()) it.titlecase(
-                    Locale.ROOT
-                ) else it.toString()
-            }
+            weekForecast.current.weather[0].description.capitalize()
         else
             weatherStringsInteractor.unknown,
         currentWeatherStatusId = if (weekForecast.current.weather.isNotEmpty())
@@ -115,12 +112,7 @@ class DtoToDomain @Inject constructor(
         else {
             val calendar = Calendar.getInstance()
             calendar.add(Calendar.DATE, dayIndex)
-            SimpleDateFormat(DATE_FORMAT, Locale.getDefault()).format(calendar.time)
-                .replaceFirstChar {
-                    if (it.isLowerCase()) it.titlecase(
-                        Locale.ROOT
-                    ) else it.toString()
-                }
+            SimpleDateFormat(DATE_FORMAT, Locale.getDefault()).format(calendar.time).capitalize()
         }
 
     private fun getTodayDate() = SimpleDateFormat(

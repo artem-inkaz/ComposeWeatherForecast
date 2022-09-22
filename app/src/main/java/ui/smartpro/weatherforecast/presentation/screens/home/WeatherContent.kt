@@ -28,12 +28,14 @@ import com.google.accompanist.insets.navigationBarsPadding
 import com.google.accompanist.insets.statusBarsPadding
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import ui.smartpro.common.Constants
+import ui.smartpro.common.Constants.TOP_APPBAR_HEIGHT
 import ui.smartpro.common.theme.AppThemes
 import ui.smartpro.domain.models.AppState
 import ui.smartpro.domain.models.ErrorState
 import ui.smartpro.domain.models.UnitsType
 import ui.smartpro.domain.models.WeatherForecast
 import ui.smartpro.viewmodels.MainViewModel
+import ui.smartpro.viewmodels.SearchViewModel
 import ui.smartpro.weatherforecast.ui.theme.ralewayFontFamily
 
 @ExperimentalMaterialApi
@@ -44,7 +46,8 @@ fun WeatherContent(
     weatherForecast: AppState<WeatherForecast>,
     unitsType: UnitsType,
     navigateToPreferencesScreen: () -> Unit,
-    navigateToSearchScreen: () -> Unit
+    navigateToSearchScreen: () -> Unit,
+    searchViewModel: SearchViewModel = hiltViewModel()
 ) {
     val scaffoldState = rememberScaffoldState()
 
@@ -130,6 +133,30 @@ fun WeatherContent(
                     )
                 }
             }
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .padding(vertical = TOP_APPBAR_HEIGHT)
+
+            ) {
+                Column(
+                    modifier = Modifier
+                        .weight(weight = 1f)
+                        .fillMaxSize()
+                ) {
+                    // Информация о городе Алматы
+                    AlmatyScreenContent(
+                        onSearchedCityClicked = { coordinates ->
+                            searchViewModel.getForecast(coordinates = coordinates)
+                        })
+                    // Информация о городе Астана
+                    AstanaScreenContent(
+                        onSearchedCityClicked = { coordinates ->
+                            searchViewModel.getForecast(coordinates = coordinates)
+                        })
+                }
+            }
         }
     }
 }
@@ -187,7 +214,7 @@ fun ColumnScope.LocationContent(
             .fillMaxWidth()
             .padding(horizontal = 15.dp)
             .weight(weight = 1.5f),
-        verticalAlignment = Alignment.CenterVertically
+        verticalAlignment = Alignment.Top
     ) {
         Icon(
             painter = painterResource(id = R.drawable.ic_location),

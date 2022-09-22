@@ -16,6 +16,7 @@ import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import ui.smartpro.viewmodels.MainViewModel
+import ui.smartpro.viewmodels.SearchViewModel
 import ui.smartpro.weatherforecast.R
 import ui.smartpro.weatherforecast.presentation.components.PermissionsRequest
 
@@ -26,7 +27,8 @@ import ui.smartpro.weatherforecast.presentation.components.PermissionsRequest
 fun HomeScreen(
     navigateToPreferencesScreen: () -> Unit,
     navigateToSearchScreen: () -> Unit,
-    mainViewmodel: MainViewModel = hiltViewModel()
+    mainViewmodel: MainViewModel = hiltViewModel(),
+    searchViewModel: SearchViewModel = hiltViewModel()
 ) {
     val context = LocalContext.current
     val systemUiController = rememberSystemUiController()
@@ -50,7 +52,12 @@ fun HomeScreen(
         permissionDeniedMessage = stringResource(id = R.string.permission_denied_message),
         navigateToSettingsScreen = { context.startActivity(Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS)) }
     ) {
-        LaunchedEffect(key1 = true) { mainViewmodel.observeCurrentLocation() }
+        LaunchedEffect(key1 = true) {
+            mainViewmodel.observeCurrentLocation()
+            searchViewModel.getAlmaty()
+            searchViewModel.getAstana()
+        }
+        // Информация о текущем городе
         WeatherContent(
             currentTheme = currentTheme,
             weatherForecast = weatherForecast,

@@ -8,6 +8,10 @@ apply plugin :'dagger.hilt.android.plugin'
 dependencies {
     implementation androidX.ktx_core
     implementation lifecycle.lifecycle_runtime_ktx
+
+    implementation androidX.compose_ui
+    implementation androidX.compose_material
+
     implementation hilt.hilt_android
     implementation hilt.hilt_navigation_compose
     kapt hilt.hilt_android_compiler
