@@ -33,7 +33,7 @@ fun SplashScreen (
             timeMillis = if (isFirstLaunch) SPLASH_SCREEN_FIRST_LAUNCH_DELAY
             else SPLASH_SCREEN_NORMAL
         )
-//        navigateToHomeScreen()
+        navigateToHomeScreen()
     }
 
     SplashBackground()

@@ -1,16 +1,20 @@
 package ui.smartpro.weatherforecast.di
 
+import android.content.Context
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import ui.smartpro.common.Constants.CITY_API_URL
 import ui.smartpro.common.Constants.WEATHER_API_URL
+import ui.smartpro.common.network.NetworkStatusListener
 import ui.smartpro.data.api.CityApi
 import ui.smartpro.data.api.ForecastApi
 import java.util.concurrent.TimeUnit
@@ -47,5 +51,11 @@ object NetworkModule {
         .addCallAdapterFactory(CoroutineCallAdapterFactory.invoke())
         .build()
         .create(CityApi::class.java)
+
+    @ExperimentalCoroutinesApi
+    @Singleton
+    @Provides
+    fun provideNetworkStatusListener(@ApplicationContext context: Context): NetworkStatusListener =
+        NetworkStatusListener(context)
 
 }

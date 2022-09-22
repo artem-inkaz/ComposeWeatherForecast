@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.callbackFlow
 import javax.inject.Inject
 
 @ExperimentalCoroutinesApi
-class NetworkStatusListener @Inject constructor(context: Context) {
+class NetworkStatusListener @Inject constructor( context: Context) {
 
     private val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
 

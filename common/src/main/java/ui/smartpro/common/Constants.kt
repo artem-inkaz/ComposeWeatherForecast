@@ -26,4 +26,7 @@ object Constants {
     const val PREFERENCE_NAME = "forecast_preferences"
     const val FIRST_LAUNCH_PREFERENCE_KEY = "isFirstLaunch"
     const val UNITS_PREFERENCE_KEY = "units_preference"
+
+    const val HOME_SCREEN_BACKGROUND_ANIMATION_DURATION = 1000
+    const val CITY_CARD_ANIMATION_DURATION = 300L
 }
