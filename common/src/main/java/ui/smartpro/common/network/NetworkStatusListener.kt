@@ -10,6 +10,9 @@ import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
 import javax.inject.Inject
 
+/**
+ *  Проверка статуста интернета
+ */
 @ExperimentalCoroutinesApi
 class NetworkStatusListener @Inject constructor( context: Context) {
 

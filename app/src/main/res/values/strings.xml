@@ -26,6 +26,17 @@
     <string name="f_s">ф/с</string>
     <string name="just_updated">Недавно обновлено</string>
     <string name="updated_time">Обновлено %1$d минут назад</string>
+    <string name="pressure_units_mm_hg">%1$s мм рт.ст.</string>
+    <string name="pressure_units_pa">Па</string>
 
+    <string name="termometer_icon" translatable="false">Termometer icon</string>
+    <string name="tilda_icon" translatable="false">Tilda Icon</string>
     <string name="refresh_icon" translatable="false">Refresh Icon</string>
+    <string name="temperature_units_celsius" translatable="false">°</string>
+    <string name="temperature_units_fahrenheit" translatable="false">°F</string>
+    <string name="sunrise_icon" translatable="false">Sunrise icon</string>
+    <string name="sunset_icon" translatable="false">Sunset icon</string>
+    <string name="humidity_icon" translatable="false">Humidity icon</string>
+    <string name="day_wind_icon" translatable="false">Day wind icon</string>
+    <string name="day_pressure_icon" translatable="false">Day pressure icon</string>
 </resources>

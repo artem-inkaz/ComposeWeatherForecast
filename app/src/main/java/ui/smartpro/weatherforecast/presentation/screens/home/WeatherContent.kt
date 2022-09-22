@@ -93,6 +93,11 @@ fun WeatherContent(
                                 weatherForecast = it,
                                 unitsType = unitsType
                             )
+                            // Прогноз погоды на неделю
+                            WeekForecastList(
+                                currentTheme = currentTheme,
+                                weatherForecast = it
+                            )
                         }
                     }
                 }
