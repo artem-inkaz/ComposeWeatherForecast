@@ -1,3 +1,56 @@
 <resources>
     <string name="app_name">WeatherForecast</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="splash_screen_background">Compose weather Forecast</string>
+    <string name="unknown">Неизвестно</string>
+    <string name="today">Сегодня</string>
+    <string name="ok">Ок</string>
+    <string name="cancel">Нет</string>
+    <string name="unavailable_feature">Функция недоступна</string>
+    <string name="location_rationale">Для работы приложения необходимы разрешения доступа к локации. Пожалуйста, дайте разрешение.</string>
+    <string name="open_settings">Открыть настройки</string>
+    <string name="permission_denied_message">В разрешении на местоположение отказано. Пожалуйста, предоставьте нам доступ к экрану настроек.</string>
+    <string name="weather_background">Погодный фон</string>
+    <string name="load_error_message">Невозможно загрузить прогноз для этого местоположения</string>
+    <string name="no_cities_message">Города не найдены</string>
+    <string name="connection_error">Извините, мы не можем загрузить прогноз для вас сейчас. Проверьте, правильно ли работают настройки вашего местоположения, и перезагрузите приложение</string>
+    <string name="location_error">Извините, мы не можем определить ваше местоположение. Пожалуйста, используйте функцию поиска, чтобы найти нужный вам прогноз.</string>
+    <string name="unknown_error">Произошла неизвестная ошибка</string>
+    <string name="no_internet_connection">Похоже, у вас отсутствует интернет-соединение.</string>
+    <string name="icon_settings">Иконка настроек</string>
+    <string name="icon_location">Иконка локации</string>
+    <string name="icon_wind">Иконка ветра</string>
+    <string name="icon_humidity">Иконка влажности</string>
+    <string name="icon_weather">Иконка погоды</string>
+    <string name="m_s">м/с</string>
+    <string name="f_s">ф/с</string>
+    <string name="just_updated">Недавно обновлено</string>
+    <string name="updated_time">Обновлено %1$d минут назад</string>
+    <string name="pressure_units_mm_hg">%1$s мм рт.ст.</string>
+    <string name="pressure_units_pa">Па</string>
+    <string name="search">Поиск</string>
+    <string name="favorite_cities">Избранные города</string>
+    <string name="add_to_favorite">Добавить в избранное</string>
+    <string name="settings">Настройки</string>
+    <string name="units">Единицы измерения</string>
+    <string name="metric">Метрическая</string>
+    <string name="imperial">Королевская</string>
+
+    <string name="termometer_icon" translatable="false">Termometer icon</string>
+    <string name="tilda_icon" translatable="false">Tilda Icon</string>
+    <string name="refresh_icon" translatable="false">Refresh Icon</string>
+    <string name="temperature_units_celsius" translatable="false">°</string>
+    <string name="temperature_units_fahrenheit" translatable="false">°F</string>
+    <string name="sunrise_icon" translatable="false">Sunrise icon</string>
+    <string name="sunset_icon" translatable="false">Sunset icon</string>
+    <string name="humidity_icon" translatable="false">Humidity icon</string>
+    <string name="day_wind_icon" translatable="false">Day wind icon</string>
+    <string name="day_pressure_icon" translatable="false">Day pressure icon</string>
+    <string name="search_icon" translatable="false">Search Icon</string>
+    <string name="close_icon" translatable="false">Close Icon</string>
+    <string name="sad_face_icon" translatable="false">Sad Face Icon</string>
+    <string name="delete_icon" translatable="false">Delete Icon</string>
+    <string name="day_status_icon" translatable="false">Day status icon</string>
+    <string name="drop_down">Drop-Down Arrow</string>
+    <string name="options">Options</string>
 </resources>

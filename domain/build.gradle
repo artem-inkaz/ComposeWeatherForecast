@@ -1,0 +1,32 @@
+apply from: "$project.rootDir/scripts/common-library.gradle"
+apply plugin :'com.android.library'
+apply plugin :'org.jetbrains.kotlin.android'
+apply plugin :"kotlin-kapt"
+apply plugin :'dagger.hilt.android.plugin'
+
+dependencies {
+    implementation project(':data')
+    implementation project(':common')
+
+    implementation androidX.ktx_core
+    implementation lifecycle.lifecycle_runtime_ktx
+    implementation hilt.hilt_android
+    implementation hilt.hilt_navigation_compose
+    kapt hilt.hilt_android_compiler
+
+    implementation retrofit.retrofit
+    implementation retrofit.converter_gson
+
+    //Loging
+    implementation timber.timber
+
+    //Preferences
+    implementation preferences.datastore_preferences
+
+    testImplementation test.junit
+    androidTestImplementation test.ext_junit
+    androidTestImplementation test.espresso_core
+    androidTestImplementation test.ui_test_junit4
+    debugImplementation test.ui_tooling
+    debugImplementation test.ui_test_manifest
+}

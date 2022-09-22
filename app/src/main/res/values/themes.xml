@@ -2,6 +2,8 @@
 <resources>
 
     <style name="Theme.WeatherForecast" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/purple_700</item>
     </style>
+
 </resources>

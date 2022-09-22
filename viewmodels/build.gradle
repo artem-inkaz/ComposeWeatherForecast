@@ -1,0 +1,20 @@
+apply from: "$project.rootDir/scripts/common-library.gradle"
+apply plugin :'com.android.library'
+apply plugin :'org.jetbrains.kotlin.android'
+apply plugin :"kotlin-kapt"
+apply plugin :'dagger.hilt.android.plugin'
+
+dependencies {
+    implementation project(':data')
+    implementation project(':domain')
+    implementation project(':common')
+
+    implementation androidX.ktx_core
+    implementation lifecycle.lifecycle_runtime_ktx
+    implementation hilt.hilt_android
+    implementation hilt.hilt_navigation_compose
+    kapt hilt.hilt_android_compiler
+
+    //Loging
+    implementation timber.timber
+}
