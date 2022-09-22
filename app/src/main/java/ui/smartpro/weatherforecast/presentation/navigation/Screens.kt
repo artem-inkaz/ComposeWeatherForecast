@@ -2,8 +2,8 @@ package ui.smartpro.weatherforecast.presentation.navigation
 
 import androidx.navigation.NavHostController
 import ui.smartpro.common.Constants.HOME_SCREEN
-import ui.smartpro.common.Constants.PREFERENCES_SCREEN
 import ui.smartpro.common.Constants.SEARCH_SCREEN
+import ui.smartpro.common.Constants.SETTINGS_SCREEN
 import ui.smartpro.common.Constants.SPLASH_SCREEN
 
 class Screens(navHostController: NavHostController) {
@@ -19,8 +19,8 @@ class Screens(navHostController: NavHostController) {
     /**
      *  Экран настроек
      */
-    val preferences: () -> Unit = {
-        navHostController.navigate(route = PREFERENCES_SCREEN)
+    val settings: () -> Unit = {
+        navHostController.navigate(route = SETTINGS_SCREEN)
     }
 
     /**

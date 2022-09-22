@@ -31,6 +31,10 @@
     <string name="search">Поиск</string>
     <string name="favorite_cities">Избранные города</string>
     <string name="add_to_favorite">Добавить в избранное</string>
+    <string name="settings">Настройки</string>
+    <string name="units">Единицы измерения</string>
+    <string name="metric">Метрическая</string>
+    <string name="imperial">Королевская</string>
 
     <string name="termometer_icon" translatable="false">Termometer icon</string>
     <string name="tilda_icon" translatable="false">Tilda Icon</string>

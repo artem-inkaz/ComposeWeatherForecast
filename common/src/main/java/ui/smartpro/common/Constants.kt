@@ -10,7 +10,7 @@ object Constants {
     //Screens
     const val SPLASH_SCREEN = "splash"
     const val HOME_SCREEN = "home"
-    const val PREFERENCES_SCREEN = "preferences"
+    const val SETTINGS_SCREEN = "preferences"
     const val SEARCH_SCREEN = "search"
 
     val thunderstorm_ids_range = 200..232
